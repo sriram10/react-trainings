@@ -1,0 +1,14 @@
+.counter-wrapper {
+  display: flex;
+  max-width: 240px;
+  border: 1px solid #ddd;
+  justify-content: center;
+}
+.counter-wrapper > * {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 22px;
+  color: #333;
+}
