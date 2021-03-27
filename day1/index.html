@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First React App</title>
+</head>
+<body>
+  <h1>Sample React Test Page</h1>
+
+  <div id="sample-app">
+    <h2>Inside container</h2>
+  </div>
+  
+  <div id="sample-app-2">
+    <h2>Inside container 2</h2>
+    <h2>Inside container 3</h2>
+    <h2>Inside container 4</h2>
+  </div>
+  
+  
+  <!-- React Core lib -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <!-- DOM lib - manipulates DOM (Virtual DOM) -->
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel - transpiling ES6/ES7 to standard JS -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    class SocialShare extends React.Component {
+
+      // 
+      render() {
+        return (
+          <h2>Share Button</h2>
+        )
+      }
+    }
+    class App extends React.Component {
+
+      // 
+      render() {
+        return (
+          <h2>From React</h2>
+        )
+      }
+    }
+
+    ReactDOM.render(<SocialShare />, document.getElementById('sample-app'))
+    ReactDOM.render(<App />, document.getElementById('sample-app-2'))
+  </script>
+</body>
+</html>
